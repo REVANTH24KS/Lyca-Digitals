@@ -1,16 +1,52 @@
-# React + Vite
+Project Overview – Responsive Landing Page (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a fully responsive Landing Page, built using React.js with Vite and deployed at:
 
-Currently, two official plugins are available:
+Live URL: https://lycatask.netlify.app/
+A ZIP file of the complete source code is also attached for reference.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Key Features
 
-## React Compiler
+1. Fully Responsive Design
+- Works smoothly across desktop, tablet, and mobile screens.
+- Includes different layouts for larger screens and optimized behavior for smaller screens.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2. Custom Components
+- All UI sections—navbar, banner slider, help cards, footer, and more—are built using modular, reusable components.
 
-## Expanding the ESLint configuration
+3. Custom Styling
+- All styles are written using custom CSS classes.
+- No external UI libraries used, allowing complete design control.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+4. Slider Banner
+- The landing page includes a responsive slider banner.
+- Smooth transitions and optimized visuals.
+
+5. Clean Code Architecture
+- Organized folder structure (components, assets, pages, styles).
+- Easy for teams and developers to maintain or extend the code.
+
+Tech Stack
+- React.js (with Vite)
+- JavaScript (ES6+)
+- CSS3 (Custom styles)
+- Responsive design / media queries
+
+How to Run the Project Locally
+
+1. Install Node.js on your system
+2. Extract the attached ZIP file
+3. Open the project folder
+4. Install dependencies:
+   npm install
+5. Start the development server:
+   npm run dev
+6. Open the URL shown in the terminal (default: http://localhost:5173/)
+
+Deliverables Included
+- Fully responsive landing page
+- Custom UI components
+- Banner slider
+- Mobile-optimized design
+- Netlify deployment
+- Attached ZIP containing entire source code
