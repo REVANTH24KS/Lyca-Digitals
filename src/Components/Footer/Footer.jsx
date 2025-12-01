@@ -1,14 +1,14 @@
 "use client";
 import { useState } from "react";
 import "./Footer.css";
-import playLogo from "../../Assets/playstore.png";
-import appleLogo from "../../Assets/appstore.png";
+import playLogo from "../../assets/playstore.png";
+import appleLogo from "../../assets/appstore.png";
 import logo from "../../assets/logo.png";
-import facebookIcon from "../../Assets/facebook.svg";
-import instagramIcon from "../../Assets/instagram.svg";
-import twitterIcon from "../../Assets/twitter.svg";
-import youtubeIcon from "../../Assets/youtube.svg";
-import downarrow from "../../Assets/downarrow.png";
+import facebookIcon from "../../assets/facebook.svg";
+import instagramIcon from "../../assets/instagram.svg";
+import twitterIcon from "../../assets/twitter.svg";
+import youtubeIcon from "../../assets/youtube.svg";
+import downarrow from "../../assets/downarrow.png";
 const Footer = () => {
   const [expandedSection, setExpandedSection] = useState(null);
 
