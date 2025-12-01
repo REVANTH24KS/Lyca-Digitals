@@ -1,7 +1,7 @@
 import "./DownloadApp.css";
-import phoneMockup from "../../Assets/phone.png";
-import playLogo from "../../Assets/playstore.png";
-import appleLogo from "../../Assets/appstore.png";
+import phoneMockup from "../../assets/phone.png";
+import playLogo from "../../assets/playstore.png";
+import appleLogo from "../../assets/appstore.png";
 
 export default function DownloadApp() {
   return (
