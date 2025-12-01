@@ -1,0 +1,280 @@
+.navbar-container {
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 85px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 20;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Left Section */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 95px;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #0a3bff;
+  display: none;
+}
+
+/* Center Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #0056ff;
+}
+
+/* Right Section */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.quick-topup {
+  background-color: #0056ff;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quick-topup:hover {
+  background-color: #0041cc;
+}
+
+.icon-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #95c1f2;
+  background: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.icon-btn:hover {
+  background-color: #f0f0f0;
+}
+
+/* Placeholder for icons */
+.user-icon::after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-image: url('../../assets/profile.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+.basket-icon::after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-image: url('../../assets/shop.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+.lang-select {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.flag-icon {
+  width: 24px;
+  height: 16px;
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-image: url('../../assets/flag.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.arrow-icon {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-image: url('../../assets/downarrow.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 10%;
+}
+
+/* ======================= RESPONSIVE ======================= */
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 20px;
+  }
+
+  .navbar-right {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 0;
+  }
+
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: auto;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  /* Mobile Menu Button - Show at right end */
+  .menu-btn {
+    display: block !important;
+    font-size: 26px;
+    margin-left: auto;
+  }
+
+  /* Mobile Menu Styles - Hidden by default */
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
+    gap: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none !important;
+    border-bottom: 1px solid #e5e5e5;
+    z-index: 9;
+  }
+
+  .nav-links.active {
+    display: flex !important;
+  }
+
+  .nav-links li {
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .nav-links li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-links li a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+  }
+
+  /* Right navbar - stays in header line */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: auto;
+  }
+
+  .quick-topup {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .icon-btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .lang-select {
+    display: none;
+  }
+
+  .flag-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar-container {
+    padding: 8px 12px;
+  }
+
+  .navbar-left {
+    gap: 6px;
+  }
+
+  .navbar-right {
+    gap: 8px;
+  }
+
+  .quick-topup {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+  .icon-btn {
+    width: 28px;
+    height: 28px;
+  }
+
+  .menu-btn {
+    font-size: 22px;
+  }
+
+  .logo {
+    width: 70px;
+  }
+}

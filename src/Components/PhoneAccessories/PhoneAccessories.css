@@ -1,0 +1,261 @@
+.phone-accessories-section {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 40px 0 60px;
+}
+
+.promo-banner {
+  color: white;
+  padding: 24px 24px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-weight: 600;
+  font-size: clamp(16px, 2.5vw, 24px);
+  line-height: 1.3;
+  margin-bottom: clamp(30px, 5vw, 50px);
+}
+
+.promo-text{
+  color: white;
+  font-weight: 600;
+  font-size: clamp(14px, 2vw, 20px);
+  line-height: 1.3;
+  margin: 0 auto;
+
+}
+.promo-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.accessories-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(16px, 4vw, 40px);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: clamp(30px, 5vw, 50px);
+  margin-top:  clamp(30px, 5vw, 50px);
+}
+
+.section-title {
+  font-size: clamp(22px, 5vw, 36px);
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0 0 8px;
+  letter-spacing: -0.5px;
+}
+
+.section-subtitle {
+  font-size: clamp(13px, 2.5vw, 16px);
+  color: #666;
+  margin: 0;
+  font-weight: 400;
+}
+
+.products-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+.products-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.products-wrapper {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+
+.product-card {
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  display: flex;
+  flex-direction: column;
+  height: 360px;
+  position: relative;
+}
+
+.product-card:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+  border-color: transparent;
+}
+
+.product-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  overflow: hidden;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: clamp(12px, 3vw, 20px);
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.05);
+}
+
+.product-info {
+  padding: clamp(12px, 3vw, 20px);
+  text-align: center;
+  background-color: white;
+  border-top: 1px solid #f0f0f0;
+}
+
+.product-name {
+  font-size: clamp(14px, 2.5vw, 16px);
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 8px;
+  line-height: 1.4;
+}
+
+.product-price {
+  margin: 0;
+  font-size: clamp(12px, 2vw, 14px);
+  color: #555;
+}
+
+.price-value {
+  font-weight: 700;
+  font-size: clamp(16px, 2.5vw, 18px);
+  color: #2c3e50;
+}
+
+.price-period {
+  font-size: clamp(11px, 1.5vw, 13px);
+  color: #999;
+  margin-left: 4px;
+}
+
+@media (max-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .accessories-container {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .phone-accessories-section {
+    padding: 30px 0 40px;
+  }
+
+  .promo-banner {
+    flex-direction: column;
+    padding: 14px 16px;
+    gap: 8px;
+  }
+
+  .products-grid {
+    display: flex;
+    gap: 16px;
+    min-width: fit-content;
+  }
+
+  .product-card {
+    min-width: 220px;
+    width: 220px;
+    height: 300px;
+    flex-shrink: 0;
+  }
+
+  .section-header {
+    margin-bottom: 30px;
+  }
+
+  .section-title {
+    font-size: 26px;
+  }
+
+  .section-subtitle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  .phone-accessories-section {
+    padding: 20px 0 30px;
+  }
+
+  .promo-banner {
+    padding: 12px 14px;
+  }
+
+  .products-wrapper {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding-left: 16px;
+    padding-right: 16px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .products-grid {
+    display: flex;
+    gap: 12px;
+    min-width: fit-content;
+    padding-right: 16px;
+  }
+
+  .product-card {
+    min-width: 180px;
+    width: 180px;
+    height: 280px;
+    flex-shrink: 0;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .section-subtitle {
+    font-size: 13px;
+  }
+
+  .product-image {
+    padding: 12px;
+  }
+
+  .product-info {
+    padding: 12px;
+  }
+
+  .product-name {
+    font-size: 14px;
+  }
+}

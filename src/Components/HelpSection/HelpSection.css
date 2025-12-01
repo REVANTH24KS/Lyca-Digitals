@@ -1,0 +1,465 @@
+.help-section {
+  width: 100%;
+}
+
+.help-intro {
+  background: #f8fafb;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin-bottom: 60px;
+}
+
+.help-intro-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.help-title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #1a3a52;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.help-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+}
+
+.help-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.help-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-color: #0066ff;
+}
+
+.help-icon-circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #e8f4ff 0%, #f0f8ff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 2px solid #d0e8ff;
+}
+
+.help-icon-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  display: block;
+}
+
+.help-card-content {
+  text-align: center;
+}
+
+.help-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a3a52;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.help-card-subtitle {
+  font-size: 14px;
+  color: #4a6fa5;
+  font-weight: 500;
+}
+
+.help-card-description {
+  font-size: 13px;
+  color: #666;
+  margin: 4px 0 0 0;
+  line-height: 1.4;
+}
+
+.international-section {
+  padding-bottom: 70px;
+  border-radius: 12px;
+}
+
+.international-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.international-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1a3a52;
+  text-align: center;
+  margin: 0 0 50px 0;
+}
+
+.international-mobile-toggle {
+  display: none;
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 12px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a3a52;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.toggle-text {
+  flex: 1;
+}
+
+.toggle-icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  font-size: 18px;
+}
+
+.toggle-icon.expanded {
+  transform: rotate(180deg);
+}
+
+.carousel-content {
+  transition: all 0.3s ease;
+  max-height: 400px;
+  overflow: hidden;
+  opacity: 1;
+}
+
+.carousel-content.hide {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.carousel-container {
+  flex: 1;
+  max-width: 900px;
+  overflow: hidden;
+}
+
+.countries-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.country-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  min-width: 100px;
+}
+
+.country-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+}
+
+.country-flag {
+  width: fit-content;
+  height: 40px;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+}
+
+.country-flag-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.country-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a3a52;
+  margin: 0;
+  text-align: center;
+}
+
+.carousel-btn {
+  background-color: #666;
+  border: none;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.carousel-btn:hover {
+  transform: scale(1.08);
+}
+
+.carousel-arrow-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+  object-fit: contain;
+}
+
+.carousel-btn:hover .carousel-arrow-icon {
+  filter: invert(1) brightness(1.2);
+}
+
+
+/* Tablet - 1024px and below */
+@media (max-width: 1024px) {
+  .help-title {
+    font-size: 36px;
+  }
+
+  .help-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .help-icon-circle {
+    width: 64px;
+    height: 64px;
+  }
+
+  .help-icon-img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .international-title {
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+}
+
+/* Mobile - 768px and below */
+@media (max-width: 768px) {
+  .help-section {
+    padding: 40px 16px;
+  }
+
+  .help-intro {
+    padding: 30px 16px;
+    margin-bottom: 40px;
+    background: #ffffff;
+  }
+
+  .help-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .help-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .help-card {
+    padding: 16px;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .help-icon-circle {
+    width: 56px;
+    height: 56px;
+    border: none;
+  }
+
+  .help-icon-img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .help-card-title {
+    font-size: 14px;
+    font-weight: 400;
+       color: black;
+    margin: 0;
+  }
+
+  .help-card-subtitle {
+    font-size: 12px;
+        font-weight: 400;
+
+    color: black;
+  }
+
+  .help-card-description {
+    display: none;
+  }
+
+  .international-section {
+    padding: 40px 16px;
+  }
+
+  .international-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    display: none;
+  }
+
+  .international-mobile-toggle {
+    display: flex;
+  }
+
+  .carousel-wrapper {
+    gap: 12px;
+  }
+
+  .carousel-content.hide {
+    display: none;
+  }
+
+  .country-card {
+    min-width: 90px;
+    padding: 12px;
+  }
+
+  .country-flag {
+    width: 50px;
+    height: 35px;
+  }
+
+  .country-name {
+    font-size: 12px;
+  }
+
+  .carousel-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .carousel-arrow-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Mobile - 480px and below */
+@media (max-width: 480px) {
+  .help-section {
+    padding: 30px 12px;
+  }
+
+  .help-intro {
+    padding: 20px 12px;
+    margin-bottom: 30px;
+  }
+
+  .help-title {
+    font-size: 22px;
+    margin-bottom: 24px;
+  }
+
+  .help-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .help-card {
+    padding: 12px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    
+  }
+
+  .help-icon-circle {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+  }
+
+  .help-icon-img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .help-card-content {
+    text-align: center;
+  }
+
+  .help-card-title {
+    font-size: 13px;
+  }
+
+  .international-section {
+    padding: 30px 12px;
+  }
+
+  .international-title {
+    font-size: 22px;
+    margin-bottom: 24px;
+  }
+
+  .international-mobile-toggle {
+    font-size: 13px;
+    padding: 10px 0;
+  }
+
+  .countries-grid {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .country-card {
+    min-width: 80px;
+    padding: 10px;
+  }
+
+  .country-flag {
+    width: 45px;
+    height: 30px;
+  }
+
+  .country-name {
+    font-size: 11px;
+  }
+
+  .carousel-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  .carousel-arrow-icon {
+    width: 16px;
+    height: 16px;
+  }
+}

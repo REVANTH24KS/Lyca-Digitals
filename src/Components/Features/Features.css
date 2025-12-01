@@ -1,0 +1,173 @@
+
+.sim-options-header {
+  display: none;
+}
+
+.sim-options-section {
+  background: #21254F;
+  padding: 60px 20px;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sim-options-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.sim-options-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.sim-option-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.sim-option-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.sim-option-card:hover .icon-circle {
+  box-shadow: 0 2px 32px rgba(0, 102, 255, 0.5);
+  transform: scale(1.05);
+}
+
+.icon-svg {
+  width: 50px;
+  height: 50px;
+  color: white;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.option-text {
+  text-align: center;
+}
+
+.option-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.option-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 4px 0 0 0;
+  line-height: 1.4;
+}
+
+
+@media (max-width: 768px) {
+  .sim-options-header {
+    display: block;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .sim-options-title {
+    font-size: 22px;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+  }
+
+  .sim-options-desc {
+    margin: 0 auto;
+    max-width: 640px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  .sim-options-section {
+    padding: 40px 16px;
+    min-height: auto;
+  }
+
+  .sim-options-grid {
+    gap: 30px;
+  }
+
+  .icon-circle {
+    width: 85px;
+    height: 85px;
+  }
+
+  .icon-svg {
+    width: 42px;
+    height: 42px;
+  }
+
+  .option-title {
+    font-size: 15px;
+  }
+
+  .option-subtitle {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sim-options-section {
+    padding: 30px 12px;
+  }
+
+  .sim-options-grid {
+    gap: 20px;
+  }
+
+  .icon-circle {
+    width: 75px;
+    height: 75px;
+  }
+
+  .icon-svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .option-title {
+    font-size: 14px;
+  }
+
+  .option-subtitle {
+    font-size: 12px;
+  }
+
+  .sim-options-title {
+    font-size: 20px;
+  }
+
+  .sim-options-desc {
+    font-size: 12px;
+    max-width: 300px;
+  }
+}
+
